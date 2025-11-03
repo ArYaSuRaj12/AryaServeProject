@@ -22,7 +22,7 @@ form.addEventListener("submit", (e) => {
   }
 
   localStorage.removeItem("orderTotal");
-  showPopup("Payment Successful 🎉", `Paid via ${selectedMethod}. Redirecting to Login Page...`, "../MainPage/Main.html");
+  showPopup("Payment Successful 🎉", `Paid via ${selectedMethod}. Redirecting to Login Page...`, "../MainPage/index.html");
 });
 
 function showPopup(title, message, redirectUrl) {

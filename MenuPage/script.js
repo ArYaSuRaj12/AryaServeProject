@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("cart", JSON.stringify(cart));
 
     alert("Redirecting to payment page...");
-    window.location.href = "../PaymentPage/payment.html";
+    window.location.href = "../PaymentPage/index.html";
   });
 
   renderCart();
