@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AryaServe — Home</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="Main.css" />
+
+  <meta name="theme-color" content="#1e1a1a">
+</head>
+<body>
+  <!-- ✅ NAVBAR -->
+  <header class="nav-wrap">
+    <nav class="navbar">
+      <a class="brand" href="Main.html">AryaServe</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="Main.html" class="active">Home</a></li>
+        <li><a href="../MenuPage/index.html">Menu</a></li>
+        <li><a href="../LoginPage/index.html">Login</a></li>
+        <li><a href="../PaymentPage/index.html">Payment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ HERO SECTION -->
+  <main>
+    <section class="hero container">
+      <!-- Left (Text) -->
+      <div class="hero-left reveal">
+        <h1 class="headline">
+          Are You Hungry?<br />
+          Don't Wait — <span class="accent">Taste the Best</span>
+        </h1>
+        <p class="sub">
+          Freshly made meals, speedy delivery, and effortless online payment.<br />
+          AryaServe — food you'll love.
+        </p>
+        <div class="cta-row">
+          <a href="../MenuPage/index.html" class="btn primary">Explore Menu</a>
+          <a href="../LoginPage/index.html" class="btn ghost">Login Now</a>
+          <a href="../PaymentPage/index.html" class="btn outline">Pay Now</a>
+        </div>
+      </div>
+
+      <!-- Right (Slider) -->
+      <div class="hero-right reveal">
+        <div class="card-slider">
+          <div class="slides">
+            <div class="slide"><img src="/Images/Pizza.jpg" alt="Delicious pizza"></div>
+            <div class="slide"><img src="/Images/food1.png" alt="Tasty burger"></div>
+            <div class="slide"><img src="/Images/ColdCoffee.avif" alt="Coffee"></div>
+          </div>
+          <button class="slide-btn prev">&#10094;</button>
+          <button class="slide-btn next">&#10095;</button>
+          <div class="dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ FEATURES SECTION -->
+    <section class="features container">
+      <div class="feature reveal">
+        <h3>Fast Delivery</h3>
+        <p>Get your meal hot and fresh at your doorstep — fast and reliable.</p>
+      </div>
+      <div class="feature reveal">
+        <h3>Secure Payment</h3>
+        <p>Choose from trusted payment options for quick and safe checkout.</p>
+      </div>
+      <div class="feature reveal">
+        <h3>Fresh & Tasty</h3>
+        <p>Our chefs prepare every order using the freshest ingredients.</p>
+      </div>
+    </section>
+
+    <!-- ✅ FOOTER -->
+    <footer class="site-footer">
+      <p>© <span id="year"></span> AryaServe. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <!-- JS -->
+  <script src="Main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="payment.css" />
+</head>
+<body>
+  <div class="payment-wrapper">
+    <div class="payment-container">
+      <h2>💳 Payment Method</h2>
+      <form id="paymentForm">
+        <div class="methods">
+          <label><input type="radio" name="method" value="UPI" checked /> UPI</label>
+          <label><input type="radio" name="method" value="Card" /> Card</label>
+          <label><input type="radio" name="method" value="Net Banking" /> Net Banking</label>
+          <label><input type="radio" name="method" value="Wallet" /> Wallet</label>
+        </div>
+
+        <button type="submit" class="pay-btn">Proceed to Pay</button>
+      </form>
+
+      <div class="summary">
+        <h3>🧾 Order Summary</h3>
+        <p>Total Amount:</p>
+        <h1>₹<span id="amount">0</span></h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Custom Popup Modal -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h3 id="popupTitle">Payment Successful!</h3>
+      <p id="popupMessage">Thank you for ordering 😊</p>
+      <button id="popupButton">OK</button>
+    </div>
+  </div>
+
+  <script src="payment.js"></script>
+</body>
+</html>

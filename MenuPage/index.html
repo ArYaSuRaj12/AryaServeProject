@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AryaServe - Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+  <header id="menu">
+    <h1>Our Delicious Menu</h1>
+  </header>
+
+  <!-- Search + Sort -->
+  <div class="control-bar">
+    <input type="text" id="searchInput" placeholder="🔍 Search your favorite dish..." />
+    <select id="sortSelect">
+      <option value="default">Sort By</option>
+      <option value="name">Name (A–Z)</option>
+      <option value="priceLow">Price (Low → High)</option>
+      <option value="priceHigh">Price (High → Low)</option>
+    </select>
+  </div>
+
+  <main>
+    <!-- BREAKFAST -->
+    <h2 class="category">🍳 Breakfast Specials</h2>
+    <section class="menu-grid">
+      <div class="card" data-name="poha" data-price="100"><img src="/Images/Poha.jpg"><h3>Poha</h3><h4>₹100</h4><button class="add-to-cart" data-price="100">Add to Cart</button></div>
+
+      <div class="card" data-name="poha jalebi" data-price="120"><img src="/Images/Poha_jalebi.jpg"><h3>Poha Jalebi</h3><h4>₹120</h4><button class="add-to-cart" data-price="120">Add to Cart</button></div>
+
+      <div class="card" data-name="LittiChokha" data-price="150"><img src="/Images/LittiChokha.jpeg"><h3>Litti Chokha</h3><h4>₹150</h4><button class="add-to-cart" data-price="150">Add to Cart</button></div>
+
+      <div class="card" data-name="omelette" data-price="80"><img src="/Images/BreadOmelette.jpg"><h3>Omelette</h3><h4>₹80</h4><button class="add-to-cart" data-price="80">Add to Cart</button></div>
+
+      <div class="card" data-name="idli sambar" data-price="90"><img src="/Images/Idli.jpeg"><h3>Idli Sambar</h3><h4>₹90</h4><button class="add-to-cart" data-price="90">Add to Cart</button></div>
+
+      <div class="card" data-name="masala dosa" data-price="110"><img src="/Images/Dosa.jpg"><h3>Masala Dosa</h3><h4>₹110</h4><button class="add-to-cart" data-price="110">Add to Cart</button></div>
+    </section>
+
+    <!-- LUNCH -->
+    <h2 class="category">🍛 Lunch & Mains</h2>
+    <section class="menu-grid">
+      <div class="card" data-name="Tandori Chicken" data-price="180"><img src="/Images/Tandori_Chicken.jpg"><h3>Tandori Chicken</h3><h4>₹180</h4><button class="add-to-cart" data-price="180">Add to Cart</button></div>
+
+      <div class="card" data-name="Pizza" data-price="250"><img src="/Images/Pizza.jpg"><h3>Pizza</h3><h4>₹250</h4><button class="add-to-cart" data-price="250">Add to Cart</button></div>
+
+      <div class="card" data-name="chole bhature" data-price="160"><img src="/Images/CholeBhature.jpeg"><h3>Chole Bhature</h3><h4>₹160</h4><button class="add-to-cart" data-price="160">Add to Cart</button></div>
+
+      <div class="card" data-name="biryani" data-price="280"><img src="/Images/Biryani.jpg"><h3>Chicken Biryani</h3><h4>₹280</h4><button class="add-to-cart" data-price="280">Add to Cart</button></div>
+
+      <div class="card" data-name="pizza" data-price="300"><img src="/Images/Pizza.jpg"><h3>Margherita Pizza</h3><h4>₹300</h4><button class="add-to-cart" data-price="300">Add to Cart</button></div>
+
+      <div class="card" data-name="pasta" data-price="220"><img src="/Images/Pasta.jpeg"><h3>White Sauce Pasta</h3><h4>₹220</h4><button class="add-to-cart" data-price="220">Add to Cart</button></div>
+    </section>
+
+    <!-- BEVERAGES -->
+    <h2 class="category">☕ Beverages</h2>
+    <section class="menu-grid">
+      <div class="card" data-name="coffee" data-price="120"><img src="/Images/Coffee.jpg"><h3>Hot Coffee</h3><h4>₹120</h4><button class="add-to-cart" data-price="120">Add to Cart</button></div>
+
+      <div class="card" data-name="cold coffee" data-price="140"><img src="/Images/ColdCoffee.avif"><h3>Cold Coffee</h3><h4>₹140</h4><button class="add-to-cart" data-price="140">Add to Cart</button></div>
+
+      <div class="card" data-name="tea" data-price="60"><img src="/Images/MasalaTea.webp"><h3>Masala Tea</h3><h4>₹60</h4><button class="add-to-cart" data-price="60">Add to Cart</button></div>
+
+      <div class="card" data-name="juice" data-price="80"><img src="/Images/FruitJuices.jpg"><h3>Fresh Juice</h3><h4>₹80</h4><button class="add-to-cart" data-price="80">Add to Cart</button></div>
+
+      <div class="card" data-name="lassi" data-price="90"><img src="/Images/sweetlassi.webp"><h3>Sweet Lassi</h3><h4>₹90</h4><button class="add-to-cart" data-price="90">Add to Cart</button></div>
+    </section>
+
+    <!-- DESSERTS -->
+    <h2 class="category">🍰 Desserts & Sweets</h2>
+    <section class="menu-grid">
+      <div class="card" data-name="gulab jamun" data-price="100"><img src="/Images/GulabJamun.jpeg"><h3>Gulab Jamun</h3><h4>₹100</h4><button class="add-to-cart" data-price="100">Add to Cart</button></div>
+
+      <div class="card" data-name="ice cream" data-price="150"><img src="/Images/ChocolateIcecrean.jpg"><h3>Chocolate Ice Cream</h3><h4>₹150</h4><button class="add-to-cart" data-price="150">Add to Cart</button></div>
+
+      <div class="card" data-name="cake" data-price="200"><img src="/Images/RedValvetCake.jpg"><h3>Red Velvet Cake</h3><h4>₹200</h4><button class="add-to-cart" data-price="200">Add to Cart</button></div>
+
+      <div class="card" data-name="kheer" data-price="130"><img src="/Images/RiceKheer.jpeg"><h3>Rice Kheer</h3><h4>₹130</h4><button class="add-to-cart" data-price="130">Add to Cart</button></div>
+
+      <div class="card" data-name="brownie" data-price="180"><img src="/Images/ChocoBrownie.jpeg"><h3>Chocolate Brownie</h3><h4>₹180</h4><button class="add-to-cart" data-price="180">Add to Cart</button></div>
+    </section>
+
+    <!-- CART -->
+    <section class="cart">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <p>Total: ₹<span id="total-price">0</span></p>
+        <button id="checkout-btn">Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
